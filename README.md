@@ -1,4 +1,9 @@
-WDL / IPlug - Oli Larkin Edition
+# README
+This is a synthesizer called Roar.
+
+## Below is the original ReadMe and License information
+
+### WDL / IPlug - Oli Larkin Edition
 
 IPlug is a simple-to-use C++ framework for developing cross platform audio plugins and targeting multiple plugin APIs with the same code. Originally developed by Schwa/Cockos, IPlug has been enhanced by various contributors. IPlug depends on WDL, and that is why this project is called WDL-OL,  although most of the differences from Cockos' WDL are to do with IPlug.
 This version of IPlug targets VST2, VST3, AudioUnit RTAS and AAX (Native) APIs. It can also produce standalone Windows/OSX audio/midi apps. 
@@ -11,7 +16,7 @@ Discuss WDL on the WDL forum http://forum.cockos.com/forumdisplay.php?f=32
 
 --------------------------------------------
 
-Cockos WDL License
+### Cockos WDL License
 
 Copyright (C) 2005 and later Cockos Incorporated
 
