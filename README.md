@@ -1,7 +1,20 @@
 # README
 This is a synthesizer called Roar.
 
+## Setup
+
+### Adding dependencies
+1) Download RTAudio from here: http://www.music.mcgill.ca/~gary/rtaudio/
+. Copy the files from the `include` folder of RTAudio into the `ASIO_SDK` directory.
+
+2) Download the VST 3 plugin SDK from Steinberg: https://www.steinberg.net/en/company/developers.html. Copy the files aeffect.h and aeffectx.h from the folder pluginterfaces → vst2.x into WDL-OL’s VST_SDK subfolder.
+
+3) Copy base/source, pluginterfaces and public.sdk/source folders for VST3. 
+
 ## Below is the original ReadMe and License information
+
+### Plugin development guide
+I used this tutorial to get up and running with audio plugin development: http://www.martin-finke.de/blog/articles/audio-plugins-002-setting-up-wdl-ol/.
 
 ### WDL / IPlug - Oli Larkin Edition
 
