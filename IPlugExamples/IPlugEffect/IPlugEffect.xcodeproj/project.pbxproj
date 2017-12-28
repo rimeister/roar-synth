@@ -13,12 +13,12 @@
 			buildPhases = (
 			);
 			dependencies = (
+				FD77411B1FF57E7500E6EB5D /* PBXTargetDependency */,
 				4F78DAF613B6436B0032E0F3 /* PBXTargetDependency */,
 				4F78DAF813B6436B0032E0F3 /* PBXTargetDependency */,
 				4F78DAFA13B6436B0032E0F3 /* PBXTargetDependency */,
 				4F8D4C6313E97B3D004F7633 /* PBXTargetDependency */,
 				4F9828F8140A9F0200F3FCC1 /* PBXTargetDependency */,
-				4F789ED016763E47009EF688 /* PBXTargetDependency */,
 			);
 			name = All;
 			productName = "AllOSX_32&64_intel";
@@ -145,7 +145,6 @@
 		4F78DAA313B640050032E0F3 /* IParam.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F78D90313B63BA50032E0F3 /* IParam.h */; };
 		4F78DAA413B640050032E0F3 /* IMidiQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F78D90513B63BA50032E0F3 /* IMidiQueue.h */; };
 		4F78DAA513B640050032E0F3 /* IGraphicsCarbon.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F78D90713B63BA50032E0F3 /* IGraphicsCarbon.h */; };
-		4F78DAA613B640050032E0F3 /* IGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F78D90813B63BA50032E0F3 /* IGraphics.h */; };
 		4F78DAB113B640470032E0F3 /* swell-menugen.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD16D0213B63489001D0217 /* swell-menugen.h */; };
 		4F78DAB213B640470032E0F3 /* swell-dlggen.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD16D0313B63494001D0217 /* swell-dlggen.h */; };
 		4F78DAB313B640470032E0F3 /* swellappmain.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD16D4513B635C8001D0217 /* swellappmain.h */; };
@@ -275,6 +274,8 @@
 		4FF016F8134E14E2001447BA /* ptrlist.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FF016F5134E14E2001447BA /* ptrlist.h */; };
 		4FF016F9134E14E2001447BA /* wdlstring.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FF016F6134E14E2001447BA /* wdlstring.h */; };
 		4FF0171A134E153A001447BA /* heapbuf.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FF01719134E153A001447BA /* heapbuf.h */; };
+		FD3964DA1FF02AAD00C8EED7 /* IGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F78D90813B63BA50032E0F3 /* IGraphics.h */; };
+		FD7741171FF57BC900E6EB5D /* common.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4FF7B0D4156A825000E6CB12 /* common.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -298,13 +299,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = D2AAC045055464E500DB518D;
 			remoteInfo = "lice_32&64_intel";
-		};
-		4F789ECF16763E47009EF688 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4FB600121567CB0A0020189A;
-			remoteInfo = "AAX_32&64_intel";
 		};
 		4F78DAF513B6436B0032E0F3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -431,6 +425,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = D2AAC045055464E500DB518D;
 			remoteInfo = "lice_32&64_intel";
+		};
+		FD77411A1FF57E7500E6EB5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FB600121567CB0A0020189A;
+			remoteInfo = AAX;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -1398,6 +1399,7 @@
 				4F78DA9513B640050032E0F3 /* IPlug_include_in_plug_hdr.h in Headers */,
 				4F78DA9613B640050032E0F3 /* IPlug_include_in_plug_src.h in Headers */,
 				4F78DA9713B640050032E0F3 /* IControl.h in Headers */,
+				FD3964DA1FF02AAD00C8EED7 /* IGraphics.h in Headers */,
 				4F78DA9813B640050032E0F3 /* IKeyboardControl.h in Headers */,
 				4F78DA9913B640050032E0F3 /* IPlugBase.h in Headers */,
 				4F78DA9A13B640050032E0F3 /* IGraphicsMac.h in Headers */,
@@ -1411,7 +1413,6 @@
 				4F78DAA313B640050032E0F3 /* IParam.h in Headers */,
 				4F78DAA413B640050032E0F3 /* IMidiQueue.h in Headers */,
 				4F78DAA513B640050032E0F3 /* IGraphicsCarbon.h in Headers */,
-				4F78DAA613B640050032E0F3 /* IGraphics.h in Headers */,
 				4F3EE94613B65A350097B791 /* IPlugOSDetect.h in Headers */,
 				4FDA440F13F3E4F2000B4551 /* IBitmapMonoText.h in Headers */,
 			);
@@ -1658,6 +1659,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F23BA0C13B647A00097A67E /* knob.png in Resources */,
+				FD7741171FF57BC900E6EB5D /* common.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1926,11 +1928,6 @@
 			name = "lice_32&64_intel";
 			targetProxy = 4F678B6C13E984B200A6A9BB /* PBXContainerItemProxy */;
 		};
-		4F789ED016763E47009EF688 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4FB600121567CB0A0020189A /* AAX */;
-			targetProxy = 4F789ECF16763E47009EF688 /* PBXContainerItemProxy */;
-		};
 		4F78DAF613B6436B0032E0F3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 4FD16A0813B63081001D0217 /* APP */;
@@ -1990,6 +1987,11 @@
 			isa = PBXTargetDependency;
 			name = "lice_32&64_intel";
 			targetProxy = 4FB6004F1567CB990020189A /* PBXContainerItemProxy */;
+		};
+		FD77411B1FF57E7500E6EB5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FB600121567CB0A0020189A /* AAX */;
+			targetProxy = FD77411A1FF57E7500E6EB5D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

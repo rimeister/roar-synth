@@ -209,7 +209,6 @@
 		4F8B6766158B4F74002FC25B /* libPluginLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8B674F158B4F53002FC25B /* libPluginLibrary.a */; };
 		4F8D4BCD13E97671004F7633 /* lice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8D4BCC13E97664004F7633 /* lice.a */; };
 		4F8D4C2813E9778D004F7633 /* lice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8D4BCC13E97664004F7633 /* lice.a */; };
-		4F8D4C2913E97794004F7633 /* lice32.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8D4C1713E976A7004F7633 /* lice32.a */; };
 		4F8D4C2F13E97806004F7633 /* lice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8D4BCC13E97664004F7633 /* lice.a */; };
 		4F9828B1140A9EB700F3FCC1 /* knob.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F23B9E413B647A00097A67E /* knob.png */; };
 		4F9828B6140A9EB700F3FCC1 /* IPlugPolySynth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52FBBED00D0CF139001C8B8A /* IPlugPolySynth.cpp */; };
@@ -388,26 +387,12 @@
 			remoteGlobalIDString = D2AAC046055464E500DB518D;
 			remoteInfo = lice;
 		};
-		4F8D4C1613E976A7004F7633 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4F8D4BC413E97664004F7633 /* lice.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4F8D4C1413E976A7004F7633;
-			remoteInfo = "lice copy";
-		};
 		4F8D4C2C13E977CD004F7633 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4F8D4BC413E97664004F7633 /* lice.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = D2AAC045055464E500DB518D;
 			remoteInfo = "lice_32&64_intel";
-		};
-		4F8D4C3713E9783A004F7633 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4F8D4BC413E97664004F7633 /* lice.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 4F8D4BD513E976A7004F7633;
-			remoteInfo = lice_32_intel;
 		};
 		4F8D4C3913E97859004F7633 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -713,7 +698,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F8B6766158B4F74002FC25B /* libPluginLibrary.a in Frameworks */,
-				4F8D4C2913E97794004F7633 /* lice32.a in Frameworks */,
 				4F7F5C6213E95EC8002918FD /* Cocoa.framework in Frameworks */,
 				4F7F5C6313E95EC8002918FD /* Carbon.framework in Frameworks */,
 				4F7F5CF713E96564002918FD /* System.framework in Frameworks */,
@@ -1276,7 +1260,6 @@
 			isa = PBXGroup;
 			children = (
 				4F8D4BCC13E97664004F7633 /* lice.a */,
-				4F8D4C1713E976A7004F7633 /* lice32.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1510,7 +1493,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				4F8D4C3813E9783A004F7633 /* PBXTargetDependency */,
 				4F8B6765158B4F67002FC25B /* PBXTargetDependency */,
 			);
 			name = RTAS;
@@ -1664,13 +1646,6 @@
 			fileType = archive.ar;
 			path = lice.a;
 			remoteRef = 4F8D4BCB13E97664004F7633 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4F8D4C1713E976A7004F7633 /* lice32.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = lice32.a;
-			remoteRef = 4F8D4C1613E976A7004F7633 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		4FA708BF158B47F000BFC572 /* libbase32.a */ = {
@@ -2017,11 +1992,6 @@
 			isa = PBXTargetDependency;
 			name = "lice_32&64_intel";
 			targetProxy = 4F8D4C2C13E977CD004F7633 /* PBXContainerItemProxy */;
-		};
-		4F8D4C3813E9783A004F7633 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = lice_32_intel;
-			targetProxy = 4F8D4C3713E9783A004F7633 /* PBXContainerItemProxy */;
 		};
 		4F8D4C3A13E97859004F7633 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
