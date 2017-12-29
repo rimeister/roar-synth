@@ -1,5 +1,4 @@
-#ifndef __ROARSYNTH__
-#define __ROARSYNTH__
+#pragma once
 
 #include "IPlug_include_in_plug_hdr.h"
 #include "IMidiQueue.h"
@@ -15,38 +14,38 @@
 class RoarSynth : public IPlug
 {
 public:
-
+  
   RoarSynth(IPlugInstanceInfo instanceInfo);
   ~RoarSynth();
-
+  
   void Reset();
   void OnParamChange(int paramIdx);
-
+  
   void ProcessDoubleReplacing(double** inputs, double** outputs, int nFrames);
   bool HostRequestingAboutBox();
-
+  
   int GetNumKeys();
   bool GetKeyStatus(int key);
   void ProcessMidiMsg(IMidiMsg* pMsg);
   void NoteOnOff(IMidiMsg* pMsg);
-
+  
 private:
-
+  
   void NoteOnOffPoly(IMidiMsg* pMsg);
   int FindFreeVoice();
-
+  
   IBitmapOverlayControl* mAboutBox;
   IControl* mKeyboard;
-
+  
   IMidiQueue mMidiQueue;
-
+  
   int mActiveVoices;
   int mKey;
   int mNumHeldKeys;
   bool mKeyStatus[128]; // array of on/off for each key
-
+  
   double mSampleRate;
-
+  
   CVoiceState mVS[MAX_VOICES];
   CWTOsc* mOsc;
   CADSREnvL* mEnv;
@@ -57,13 +56,13 @@ enum ELayout
 {
   kWidth = GUI_WIDTH,  // width of plugin window
   kHeight = GUI_HEIGHT, // height of plugin window
-
+  
   kKeybX = 1,
   kKeybY = 233,
-
+  
   kGainX = 100,
   kGainY = 100,
   kKnobFrames = 60
 };
 
-#endif //__ROARSYNTH__
+
