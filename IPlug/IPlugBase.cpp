@@ -4,7 +4,7 @@
 #include <ctime>
 #include <assert.h>
 #include "wdlendian.h"
-#include "base64encdec.h"
+#include "../WDL/base64encdec.h"
 
 IPlugBase::IPlugBase(int nParams,
                      const char* channelIOStr,
