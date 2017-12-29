@@ -18,7 +18,7 @@ enum ELayout
 
   kTextX = 10,
   kTextY = 10,
-  kGainX = 100,
+  kGainX = 50,
   kGainY = 100,
   kKnobFrames = 60
 };
