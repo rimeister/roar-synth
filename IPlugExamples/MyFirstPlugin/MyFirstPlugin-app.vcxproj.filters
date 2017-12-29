@@ -12,13 +12,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\WDL\rtaudiomidi\RtAudio.h">
+    <ClInclude Include="..\..\IPlug\rtaudiomidi\RtAudio.h">
       <Filter>app\RtAudioMidi</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\WDL\rtaudiomidi\RtError.h">
+    <ClInclude Include="..\..\IPlug\rtaudiomidi\RtError.h">
       <Filter>app\RtAudioMidi</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\WDL\rtaudiomidi\RtMidi.h">
+    <ClInclude Include="..\..\IPlug\rtaudiomidi\RtMidi.h">
       <Filter>app\RtAudioMidi</Filter>
     </ClInclude>
     <ClInclude Include="..\..\ASIO_SDK\asiosys.h">
@@ -44,16 +44,16 @@
     </ClInclude>
     <ClInclude Include="resource.h" />
     <ClInclude Include="MyFirstPlugin.h" />
-    <ClInclude Include="..\..\WDL\IPlug\IPlugStandalone.h">
+    <ClInclude Include="..\..\IPlug\IPlugStandalone.h">
       <Filter>app</Filter>
     </ClInclude>
     <ClInclude Include="app_wrapper\app_resource.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\WDL\rtaudiomidi\RtAudio.cpp">
+    <ClCompile Include="..\..\IPlug\rtaudiomidi\RtAudio.cpp">
       <Filter>app\RtAudioMidi</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\WDL\rtaudiomidi\RtMidi.cpp">
+    <ClCompile Include="..\..\IPlug\rtaudiomidi\RtMidi.cpp">
       <Filter>app\RtAudioMidi</Filter>
     </ClCompile>
     <ClCompile Include="..\..\ASIO_SDK\asio.cpp">
@@ -72,7 +72,7 @@
       <Filter>app</Filter>
     </ClCompile>
     <ClCompile Include="MyFirstPlugin.cpp" />
-    <ClCompile Include="..\..\WDL\IPlug\IPlugStandalone.cpp">
+    <ClCompile Include="..\..\IPlug\IPlugStandalone.cpp">
       <Filter>app</Filter>
     </ClCompile>
   </ItemGroup>

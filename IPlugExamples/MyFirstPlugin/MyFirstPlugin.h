@@ -1,5 +1,4 @@
-#ifndef __MYFIRSTPLUGIN__
-#define __MYFIRSTPLUGIN__
+#pragma once
 
 #include "IPlug_include_in_plug_hdr.h"
 
@@ -9,12 +8,9 @@ public:
   MyFirstPlugin(IPlugInstanceInfo instanceInfo);
   ~MyFirstPlugin();
 
-  void Reset();
-  void OnParamChange(int paramIdx);
-  void ProcessDoubleReplacing(double** inputs, double** outputs, int nFrames);
+  void Reset() override;
+  void OnParamChange(int paramIdx) override;
+  void ProcessDoubleReplacing(double** inputs, double** outputs, int nFrames) override;
 
 private:
-  double mGain;
 };
-
-#endif

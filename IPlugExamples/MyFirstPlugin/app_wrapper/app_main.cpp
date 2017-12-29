@@ -237,37 +237,33 @@ void MIDICallback( double deltatime, std::vector< unsigned char > *message, void
 {
   if ( message->size() )
   {
-    IMidiMsg *myMsg;
+    IMidiMsg msg;
 
     switch (message->size())
     {
       case 1:
-        myMsg = new IMidiMsg(0, message->at(0), 0, 0);
+        msg = IMidiMsg(0, message->at(0), 0, 0);
         break;
       case 2:
-        myMsg = new IMidiMsg(0, message->at(0), message->at(1), 0);
+        msg = IMidiMsg(0, message->at(0), message->at(1), 0);
         break;
       case 3:
-        myMsg = new IMidiMsg(0, message->at(0), message->at(1), message->at(2));
+        msg = IMidiMsg(0, message->at(0), message->at(1), message->at(2));
         break;
       default:
         DBGMSG("NOT EXPECTING %d midi callback msg len\n", (int) message->size());
         break;
     }
 
-    IMidiMsg msg(*myMsg);
-
-    delete myMsg;
-
     // filter midi messages based on channel, if gStatus.mMidiInChan != all (0)
     if (gState->mMidiInChan)
     {
       if (gState->mMidiInChan == msg.Channel() + 1 )
-        gPluginInstance->ProcessMidiMsg(&msg);
+        gPluginInstance->ProcessMidiMsg(msg);
     }
     else
     {
-      gPluginInstance->ProcessMidiMsg(&msg);
+      gPluginInstance->ProcessMidiMsg(msg);
     }
   }
 }
@@ -301,7 +297,7 @@ int AudioCallback(void *outputBuffer,
         double* inputs[2] = {inputBufferD + i, inputBufferD + inRightOffset + i};
         double* outputs[2] = {outputBufferD + i, outputBufferD + nFrames + i};
 
-        gPluginInstance->LockMutexAndProcessDoubleReplacing(inputs, outputs, gSigVS);
+        gPluginInstance->ProcessDoubleReplacing(inputs, outputs, gSigVS);
       }
 
       // fade in
@@ -409,7 +405,7 @@ bool InitialiseAudio(unsigned int inId,
       {
         gDAC->abortStream();
       }
-      catch (RtError& e)
+      catch (RtAudioError& e)
       {
         e.printMessage();
       }
@@ -452,7 +448,7 @@ bool InitialiseAudio(unsigned int inId,
 
     memcpy(gActiveState, gState, sizeof(AppState)); // copy state to active state
   }
-  catch ( RtError& e )
+  catch ( RtAudioError& e )
   {
     e.printMessage();
     return false;
@@ -467,7 +463,7 @@ bool InitialiseMidi()
   {
     gMidiIn = new RtMidiIn();
   }
-  catch ( RtError &error )
+  catch ( RtAudioError &error )
   {
     FREE_NULL(gMidiIn);
     error.printMessage();
@@ -478,7 +474,7 @@ bool InitialiseMidi()
   {
     gMidiOut = new RtMidiOut();
   }
-  catch ( RtError &error )
+  catch ( RtAudioError &error )
   {
     FREE_NULL(gMidiOut);
     error.printMessage();
@@ -602,18 +598,9 @@ bool ChooseMidiOutput(const char* pPortName)
 
 extern bool AttachGUI()
 {
-  IGraphics* pGraphics = gPluginInstance->GetGUI();
-
-  if (pGraphics)
+  if (gPluginInstance->GetHasUI())
   {
-#ifdef OS_WIN
-    if (!pGraphics->OpenWindow(gHWND))
-      pGraphics=0;
-#else // Cocoa OSX
-    if (!pGraphics->OpenWindow(gHWND))
-      pGraphics=0;
-#endif
-    if (pGraphics)
+    if (gPluginInstance->OpenWindow((void*) gHWND))
     {
       gPluginInstance->OnGUIOpen();
       return true;
@@ -647,7 +634,7 @@ void Cleanup()
     // Stop the stream
     gDAC->stopStream();
   }
-  catch (RtError& e)
+  catch (RtAudioError& e)
   {
     e.printMessage();
   }

@@ -1,5 +1,4 @@
-#ifndef _IPLUGAPP_APP_MAIN_H_
-#define _IPLUGAPP_APP_MAIN_H_
+#pragma once
 
 #include "IPlugOSDetect.h"
 
@@ -31,7 +30,7 @@
   #include "swell.h"
   #define SLEEP( milliseconds ) usleep( (unsigned long) (milliseconds * 1000.0) )
 
-  #define DEFAULT_INPUT_DEV "Built-in Microphone"
+  #define DEFAULT_INPUT_DEV "Built-in Input"
   #define DEFAULT_OUTPUT_DEV "Built-in Output"
 
   #define DAC_COREAUDIO 0
@@ -142,6 +141,3 @@ extern std::vector<unsigned int> gAudioInputDevs;
 extern std::vector<unsigned int> gAudioOutputDevs;
 extern std::vector<std::string> gMIDIInputDevNames;
 extern std::vector<std::string> gMIDIOutputDevNames;
-
-#endif //_IPLUGAPP_APP_MAIN_H_
-

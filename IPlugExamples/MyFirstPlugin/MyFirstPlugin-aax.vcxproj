@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <UsingTask TaskName="PaceFixLogs" AssemblyFile="$(PACE_FUSION_HOME)PaceFusionUi2013.dll" />
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -31,31 +31,32 @@
     <ProjectGuid>{DC4B5920-933D-4C82-B842-F34431D55A93}</ProjectGuid>
     <RootNamespace>MyFirstPlugin-aax</RootNamespace>
     <Keyword>ManagedCProj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Tracer|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Tracer|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v140</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -106,12 +107,26 @@
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Tracer|x64'">false</LinkIncremental>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetExt>.aaxplugin</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetExt>.aaxplugin</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Tracer|Win32'">
+    <TargetExt>.aaxplugin</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetExt>.aaxplugin</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetExt>.aaxplugin</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Tracer|x64'">
+    <TargetExt>.aaxplugin</TargetExt>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <PreBuildEvent>
-      <Command>DEL /Q /F /S .\build-win\aax\bin\$(BINARY_NAME).aaxplugin\Contents\Win32\
-CALL ..\..\AAX_SDK\Utilities\CreatePackage.bat $(OutDir) ..\..\AAX_SDK\Utilities\PlugIn.ico
-</Command>
-    </PreBuildEvent>
+    <PreBuildEvent />
     <CustomBuildStep>
       <Message>
       </Message>
@@ -121,7 +136,7 @@ CALL ..\..\AAX_SDK\Utilities\CreatePackage.bat $(OutDir) ..\..\AAX_SDK\Utilities
     </CustomBuildStep>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(AAX_INCLUDES);.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(AAX_INCLUDES);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>$(AAX_DEFS);$(DEBUG_DEFS);%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <ExceptionHandling>Async</ExceptionHandling>
@@ -152,17 +167,10 @@ CALL ..\..\AAX_SDK\Utilities\CreatePackage.bat $(OutDir) ..\..\AAX_SDK\Utilities
     <Bscmake>
       <OutputFile>$(OutDir)$(ProjectName).bsc</OutputFile>
     </Bscmake>
-    <PostBuildEvent>
-      <Message>Copying AAX plugin folder to $(AAX_PLUGINS_PATH)</Message>
-      <Command>xcopy /E /Y /i ".\build-win\aax\bin\$(BINARY_NAME).aaxplugin" "$(AAX_PLUGINS_PATH)\$(BINARY_NAME).aaxplugin"</Command>
-    </PostBuildEvent>
+    <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <PreBuildEvent>
-      <Command>DEL /Q /F /S .\build-win\aax\bin\$(BINARY_NAME).aaxplugin\Contents\Win32\
-CALL ..\..\AAX_SDK\Utilities\CreatePackage.bat $(OutDir) ..\..\AAX_SDK\Utilities\PlugIn.ico
-</Command>
-    </PreBuildEvent>
+    <PreBuildEvent />
     <CustomBuildStep>
       <Message>
       </Message>
@@ -173,7 +181,7 @@ CALL ..\..\AAX_SDK\Utilities\CreatePackage.bat $(OutDir) ..\..\AAX_SDK\Utilities
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <AdditionalIncludeDirectories>$(AAX_INCLUDES);.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(AAX_INCLUDES);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>$(AAX_DEFS);$(RELEASE_DEFS);%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <ExceptionHandling>Async</ExceptionHandling>
@@ -207,17 +215,10 @@ CALL ..\..\AAX_SDK\Utilities\CreatePackage.bat $(OutDir) ..\..\AAX_SDK\Utilities
     <Bscmake>
       <OutputFile>$(OutDir)$(ProjectName).bsc</OutputFile>
     </Bscmake>
-    <PostBuildEvent>
-      <Message>Copying AAX plugin folder to $(AAX_PLUGINS_PATH)</Message>
-      <Command>xcopy /E /Y /i ".\build-win\aax\bin\$(BINARY_NAME).aaxplugin" "$(AAX_PLUGINS_PATH)\$(BINARY_NAME).aaxplugin"</Command>
-    </PostBuildEvent>
+    <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Tracer|Win32'">
-    <PreBuildEvent>
-      <Command>DEL /Q /F /S .\build-win\aax\bin\$(BINARY_NAME).aaxplugin\Contents\Win32\
-CALL ..\..\AAX_SDK\Utilities\CreatePackage.bat $(OutDir) ..\..\AAX_SDK\Utilities\PlugIn.ico
-</Command>
-    </PreBuildEvent>
+    <PreBuildEvent />
     <CustomBuildStep>
       <Message>
       </Message>
@@ -228,7 +229,7 @@ CALL ..\..\AAX_SDK\Utilities\CreatePackage.bat $(OutDir) ..\..\AAX_SDK\Utilities
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <AdditionalIncludeDirectories>$(AAX_INCLUDES);.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(AAX_INCLUDES);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>$(AAX_DEFS);$(TRACER_DEFS);%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <ExceptionHandling>Async</ExceptionHandling>
@@ -262,16 +263,10 @@ CALL ..\..\AAX_SDK\Utilities\CreatePackage.bat $(OutDir) ..\..\AAX_SDK\Utilities
     <Bscmake>
       <OutputFile>$(OutDir)$(ProjectName).bsc</OutputFile>
     </Bscmake>
-    <PostBuildEvent>
-      <Message>Copying AAX plugin folder to $(AAX_PLUGINS_PATH)</Message>
-      <Command>xcopy /E /Y /i ".\build-win\aax\bin\$(BINARY_NAME).aaxplugin" "$(AAX_PLUGINS_PATH)\$(BINARY_NAME).aaxplugin"</Command>
-    </PostBuildEvent>
+    <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <PreBuildEvent>
-      <Command>DEL /Q /F /S .\build-win\aax\bin\$(BINARY_NAME).aaxplugin\Contents\x64\
-      </Command>
-    </PreBuildEvent>
+    <PreBuildEvent />
     <CustomBuildStep>
       <Message>
       </Message>
@@ -284,7 +279,7 @@ CALL ..\..\AAX_SDK\Utilities\CreatePackage.bat $(OutDir) ..\..\AAX_SDK\Utilities
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(AAX_INCLUDES);.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(AAX_INCLUDES);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>$(AAX_DEFS);$(DEBUG_DEFS);%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <ExceptionHandling>Async</ExceptionHandling>
@@ -315,16 +310,10 @@ CALL ..\..\AAX_SDK\Utilities\CreatePackage.bat $(OutDir) ..\..\AAX_SDK\Utilities
     <Bscmake>
       <OutputFile>$(OutDir)$(ProjectName).bsc</OutputFile>
     </Bscmake>
-    <PostBuildEvent>
-      <Message>Copying AAX plugin folder to $(AAX_PLUGINS_PATH)</Message>
-      <Command>xcopy /E /Y /i ".\build-win\aax\bin\$(BINARY_NAME).aaxplugin" "$(AAX_PLUGINS_PATH)\$(BINARY_NAME).aaxplugin"</Command>
-    </PostBuildEvent>
+    <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <PreBuildEvent>
-      <Command>DEL /Q /F /S .\build-win\aax\bin\$(BINARY_NAME).aaxplugin\Contents\x64\
-      </Command>
-    </PreBuildEvent>
+    <PreBuildEvent />
     <CustomBuildStep>
       <Message>
       </Message>
@@ -337,7 +326,7 @@ CALL ..\..\AAX_SDK\Utilities\CreatePackage.bat $(OutDir) ..\..\AAX_SDK\Utilities
     </Midl>
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
-      <AdditionalIncludeDirectories>$(AAX_INCLUDES);.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(AAX_INCLUDES);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>$(AAX_DEFS);$(RELEASE_DEFS);%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <ExceptionHandling>Async</ExceptionHandling>
@@ -370,16 +359,10 @@ CALL ..\..\AAX_SDK\Utilities\CreatePackage.bat $(OutDir) ..\..\AAX_SDK\Utilities
     <Bscmake>
       <OutputFile>$(OutDir)$(ProjectName).bsc</OutputFile>
     </Bscmake>
-    <PostBuildEvent>
-      <Message>Copying AAX plugin folder to $(AAX_PLUGINS_PATH)</Message>
-      <Command>xcopy /E /Y /i ".\build-win\aax\bin\$(BINARY_NAME).aaxplugin" "$(AAX_PLUGINS_PATH)\$(BINARY_NAME).aaxplugin"</Command>
-    </PostBuildEvent>
+    <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Tracer|x64'">
-    <PreBuildEvent>
-      <Command>DEL /Q /F /S .\build-win\aax\bin\$(BINARY_NAME).aaxplugin\Contents\x64\
-      </Command>
-    </PreBuildEvent>
+    <PreBuildEvent />
     <CustomBuildStep>
       <Message>
       </Message>
@@ -392,7 +375,7 @@ CALL ..\..\AAX_SDK\Utilities\CreatePackage.bat $(OutDir) ..\..\AAX_SDK\Utilities
     </Midl>
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
-      <AdditionalIncludeDirectories>$(AAX_INCLUDES);.\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(AAX_INCLUDES);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>$(AAX_DEFS);$(TRACER_DEFS);%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <ExceptionHandling>Async</ExceptionHandling>
@@ -425,10 +408,7 @@ CALL ..\..\AAX_SDK\Utilities\CreatePackage.bat $(OutDir) ..\..\AAX_SDK\Utilities
     <Bscmake>
       <OutputFile>$(OutDir)$(ProjectName).bsc</OutputFile>
     </Bscmake>
-    <PostBuildEvent>
-      <Message>Copying AAX plugin folder to $(AAX_PLUGINS_PATH)</Message>
-      <Command>xcopy /E /Y /i ".\build-win\aax\bin\$(BINARY_NAME).aaxplugin" "$(AAX_PLUGINS_PATH)\$(BINARY_NAME).aaxplugin"</Command>
-    </PostBuildEvent>
+    <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\AAX_SDK\Interfaces\AAX_Exports.cpp">
@@ -439,19 +419,19 @@ CALL ..\..\AAX_SDK\Utilities\CreatePackage.bat $(OutDir) ..\..\AAX_SDK\Utilities
       <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
       <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Tracer|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
     </ClCompile>
-    <ClCompile Include="..\..\WDL\IPlug\Hosts.cpp" />
-    <ClCompile Include="..\..\WDL\IPlug\IBitmapMonoText.cpp" />
-    <ClCompile Include="..\..\WDL\IPlug\IControl.cpp" />
-    <ClCompile Include="..\..\WDL\IPlug\IGraphics.cpp" />
-    <ClCompile Include="..\..\WDL\IPlug\IGraphicsWin.cpp" />
-    <ClCompile Include="..\..\WDL\IPlug\IParam.cpp" />
-    <ClCompile Include="..\..\WDL\IPlug\IPlugBase.cpp" />
-    <ClCompile Include="..\..\WDL\IPlug\IPlugStructs.cpp" />
-    <ClCompile Include="..\..\WDL\IPlug\IPopupMenu.cpp" />
-    <ClCompile Include="..\..\WDL\IPlug\Log.cpp" />
-    <ClCompile Include="..\..\WDL\IPlug\AAX\AAX_CIPlugParameters.cpp" />
-    <ClCompile Include="..\..\WDL\IPlug\IPlugAAX.cpp" />
-    <ClCompile Include="..\..\WDL\IPlug\AAX\IPlugAAX_Describe.cpp" />
+    <ClCompile Include="..\..\IPlug\Hosts.cpp" />
+    <ClCompile Include="..\..\IPlug\IBitmapMonoText.cpp" />
+    <ClCompile Include="..\..\IPlug\IControl.cpp" />
+    <ClCompile Include="..\..\IPlug\IGraphics.cpp" />
+    <ClCompile Include="..\..\IPlug\IGraphicsWin.cpp" />
+    <ClCompile Include="..\..\IPlug\IParam.cpp" />
+    <ClCompile Include="..\..\IPlug\IPlugBase.cpp" />
+    <ClCompile Include="..\..\IPlug\IPlugStructs.cpp" />
+    <ClCompile Include="..\..\IPlug\IPopupMenu.cpp" />
+    <ClCompile Include="..\..\IPlug\Log.cpp" />
+    <ClCompile Include="..\..\IPlug\AAX\AAX_CIPlugParameters.cpp" />
+    <ClCompile Include="..\..\IPlug\IPlugAAX.cpp" />
+    <ClCompile Include="..\..\IPlug\AAX\IPlugAAX_Describe.cpp" />
     <ClCompile Include="MyFirstPlugin.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -484,24 +464,24 @@ CALL ..\..\AAX_SDK\Utilities\CreatePackage.bat $(OutDir) ..\..\AAX_SDK\Utilities
     </CustomBuildStep>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\WDL\IPlug\Containers.h" />
-    <ClInclude Include="..\..\WDL\IPlug\Hosts.h" />
-    <ClInclude Include="..\..\WDL\IPlug\IBitmapMonoText.h" />
-    <ClInclude Include="..\..\WDL\IPlug\IControl.h" />
-    <ClInclude Include="..\..\WDL\IPlug\IGraphics.h" />
-    <ClInclude Include="..\..\WDL\IPlug\IGraphicsWin.h" />
-    <ClInclude Include="..\..\WDL\IPlug\IKeyboardControl.h" />
-    <ClInclude Include="..\..\WDL\IPlug\IMidiQueue.h" />
-    <ClInclude Include="..\..\WDL\IPlug\IParam.h" />
-    <ClInclude Include="..\..\WDL\IPlug\IPlug_include_in_plug_hdr.h" />
-    <ClInclude Include="..\..\WDL\IPlug\IPlug_include_in_plug_src.h" />
-    <ClInclude Include="..\..\WDL\IPlug\IPlugBase.h" />
-    <ClInclude Include="..\..\WDL\IPlug\IPlugOSDetect.h" />
-    <ClInclude Include="..\..\WDL\IPlug\IPlugStructs.h" />
-    <ClInclude Include="..\..\WDL\IPlug\IPopupMenu.h" />
-    <ClInclude Include="..\..\WDL\IPlug\Log.h" />
-    <ClInclude Include="..\..\WDL\IPlug\AAX\AAX_CIPlugParameters.h" />
-    <ClInclude Include="..\..\WDL\IPlug\IPlugAAX.h" />
+    <ClInclude Include="..\..\IPlug\Containers.h" />
+    <ClInclude Include="..\..\IPlug\Hosts.h" />
+    <ClInclude Include="..\..\IPlug\IBitmapMonoText.h" />
+    <ClInclude Include="..\..\IPlug\IControl.h" />
+    <ClInclude Include="..\..\IPlug\IGraphics.h" />
+    <ClInclude Include="..\..\IPlug\IGraphicsWin.h" />
+    <ClInclude Include="..\..\IPlug\IKeyboardControl.h" />
+    <ClInclude Include="..\..\IPlug\IMidiQueue.h" />
+    <ClInclude Include="..\..\IPlug\IParam.h" />
+    <ClInclude Include="..\..\IPlug\IPlug_include_in_plug_hdr.h" />
+    <ClInclude Include="..\..\IPlug\IPlug_include_in_plug_src.h" />
+    <ClInclude Include="..\..\IPlug\IPlugBase.h" />
+    <ClInclude Include="..\..\IPlug\IPlugOSDetect.h" />
+    <ClInclude Include="..\..\IPlug\IPlugStructs.h" />
+    <ClInclude Include="..\..\IPlug\IPopupMenu.h" />
+    <ClInclude Include="..\..\IPlug\Log.h" />
+    <ClInclude Include="..\..\IPlug\AAX\AAX_CIPlugParameters.h" />
+    <ClInclude Include="..\..\IPlug\IPlugAAX.h" />
     <ClInclude Include="MyFirstPlugin.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
