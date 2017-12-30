@@ -70,16 +70,12 @@
 		4F78D91313B63BA50032E0F3 /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D8FB13B63BA50032E0F3 /* Log.cpp */; };
 		4F78D91413B63BA50032E0F3 /* IPopupMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D8FD13B63BA50032E0F3 /* IPopupMenu.cpp */; };
 		4F78D91813B63BA50032E0F3 /* IParam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D90413B63BA50032E0F3 /* IParam.cpp */; };
-		4F78D91913B63BA50032E0F3 /* IControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D90913B63BA50032E0F3 /* IControl.cpp */; };
 		4F78D93E13B63BA50032E0F3 /* IPlug_include_in_plug_hdr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F78D8E613B63BA40032E0F3 /* IPlug_include_in_plug_hdr.h */; };
 		4F78D94013B63BA50032E0F3 /* IPlug_include_in_plug_src.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F78D8E813B63BA40032E0F3 /* IPlug_include_in_plug_src.h */; };
-		4F78D94113B63BA50032E0F3 /* IControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F78D8E913B63BA40032E0F3 /* IControl.h */; };
-		4F78D94213B63BA50032E0F3 /* IKeyboardControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F78D8EA13B63BA40032E0F3 /* IKeyboardControl.h */; };
 		4F78D94413B63BA50032E0F3 /* IPlugBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F78D8EC13B63BA40032E0F3 /* IPlugBase.h */; };
 		4F78D94513B63BA50032E0F3 /* IPlugBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D8ED13B63BA40032E0F3 /* IPlugBase.cpp */; };
 		4F78D94613B63BA50032E0F3 /* IGraphicsMac.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F78D8EE13B63BA50032E0F3 /* IGraphicsMac.h */; };
 		4F78D94713B63BA50032E0F3 /* IPlugStructs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D8EF13B63BA50032E0F3 /* IPlugStructs.cpp */; };
-		4F78D94913B63BA50032E0F3 /* Containers.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F78D8F113B63BA50032E0F3 /* Containers.h */; };
 		4F78D94A13B63BA50032E0F3 /* Hosts.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F78D8F213B63BA50032E0F3 /* Hosts.h */; };
 		4F78D94B13B63BA50032E0F3 /* Hosts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D8F313B63BA50032E0F3 /* Hosts.cpp */; };
 		4F78D94D13B63BA50032E0F3 /* IGraphicsMac.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D8F513B63BA50032E0F3 /* IGraphicsMac.mm */; };
@@ -98,7 +94,6 @@
 		4F78D95D13B63BA50032E0F3 /* IMidiQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F78D90513B63BA50032E0F3 /* IMidiQueue.h */; };
 		4F78D95F13B63BA50032E0F3 /* IGraphicsCarbon.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F78D90713B63BA50032E0F3 /* IGraphicsCarbon.h */; };
 		4F78D96013B63BA50032E0F3 /* IGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F78D90813B63BA50032E0F3 /* IGraphics.h */; };
-		4F78D96113B63BA50032E0F3 /* IControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D90913B63BA50032E0F3 /* IControl.cpp */; };
 		4F78D9BB13B63BA50032E0F3 /* IPlugBase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D8ED13B63BA40032E0F3 /* IPlugBase.cpp */; };
 		4F78D9BC13B63BA50032E0F3 /* IPlugStructs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D8EF13B63BA50032E0F3 /* IPlugStructs.cpp */; };
 		4F78D9BD13B63BA50032E0F3 /* Hosts.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D8F313B63BA50032E0F3 /* Hosts.cpp */; };
@@ -109,7 +104,6 @@
 		4F78D9C313B63BA50032E0F3 /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D8FB13B63BA50032E0F3 /* Log.cpp */; };
 		4F78D9C413B63BA50032E0F3 /* IPopupMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D8FD13B63BA50032E0F3 /* IPopupMenu.cpp */; };
 		4F78D9C813B63BA50032E0F3 /* IParam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D90413B63BA50032E0F3 /* IParam.cpp */; };
-		4F78D9C913B63BA50032E0F3 /* IControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D90913B63BA50032E0F3 /* IControl.cpp */; };
 		4F78D9F313B63C6A0032E0F3 /* IPlugVST.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D9EC13B63C6A0032E0F3 /* IPlugVST.cpp */; };
 		4F78DA0713B63CD90032E0F3 /* IPlugAU.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F78D9FB13B63CD90032E0F3 /* IPlugAU.h */; };
 		4F78DA0813B63CD90032E0F3 /* IPlugAU.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D9FC13B63CD90032E0F3 /* IPlugAU.cpp */; };
@@ -131,11 +125,8 @@
 		4F78DA9413B640050032E0F3 /* aeffectx.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F78D8D313B63B5D0032E0F3 /* aeffectx.h */; };
 		4F78DA9513B640050032E0F3 /* IPlug_include_in_plug_hdr.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F78D8E613B63BA40032E0F3 /* IPlug_include_in_plug_hdr.h */; };
 		4F78DA9613B640050032E0F3 /* IPlug_include_in_plug_src.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F78D8E813B63BA40032E0F3 /* IPlug_include_in_plug_src.h */; };
-		4F78DA9713B640050032E0F3 /* IControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F78D8E913B63BA40032E0F3 /* IControl.h */; };
-		4F78DA9813B640050032E0F3 /* IKeyboardControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F78D8EA13B63BA40032E0F3 /* IKeyboardControl.h */; };
 		4F78DA9913B640050032E0F3 /* IPlugBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F78D8EC13B63BA40032E0F3 /* IPlugBase.h */; };
 		4F78DA9A13B640050032E0F3 /* IGraphicsMac.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F78D8EE13B63BA50032E0F3 /* IGraphicsMac.h */; };
-		4F78DA9C13B640050032E0F3 /* Containers.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F78D8F113B63BA50032E0F3 /* Containers.h */; };
 		4F78DA9D13B640050032E0F3 /* Hosts.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F78D8F213B63BA50032E0F3 /* Hosts.h */; };
 		4F78DA9E13B640050032E0F3 /* IGraphicsCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F78D8F913B63BA50032E0F3 /* IGraphicsCocoa.h */; };
 		4F78DA9F13B640050032E0F3 /* Log.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F78D8FA13B63BA50032E0F3 /* Log.h */; };
@@ -193,7 +184,6 @@
 		4F7F5C5813E95EC8002918FD /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D8FB13B63BA50032E0F3 /* Log.cpp */; };
 		4F7F5C5913E95EC8002918FD /* IPopupMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D8FD13B63BA50032E0F3 /* IPopupMenu.cpp */; };
 		4F7F5C5A13E95EC8002918FD /* IParam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D90413B63BA50032E0F3 /* IParam.cpp */; };
-		4F7F5C5B13E95EC8002918FD /* IControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D90913B63BA50032E0F3 /* IControl.cpp */; };
 		4F7F5C6213E95EC8002918FD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 		4F7F5C6313E95EC8002918FD /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52C4DB180D0E51270007A920 /* Carbon.framework */; };
 		4F7F5C7113E95FB2002918FD /* IPlugRTAS.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F7F5C6F13E95FB2002918FD /* IPlugRTAS.cpp */; };
@@ -209,7 +199,6 @@
 		4F8B6766158B4F74002FC25B /* libPluginLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8B674F158B4F53002FC25B /* libPluginLibrary.a */; };
 		4F8D4BCD13E97671004F7633 /* lice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8D4BCC13E97664004F7633 /* lice.a */; };
 		4F8D4C2813E9778D004F7633 /* lice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8D4BCC13E97664004F7633 /* lice.a */; };
-		4F8D4C2913E97794004F7633 /* lice32.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8D4C1713E976A7004F7633 /* lice32.a */; };
 		4F8D4C2F13E97806004F7633 /* lice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F8D4BCC13E97664004F7633 /* lice.a */; };
 		4F9828B1140A9EB700F3FCC1 /* knob.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F23B9E413B647A00097A67E /* knob.png */; };
 		4F9828B6140A9EB700F3FCC1 /* RoarSynth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 52FBBED00D0CF139001C8B8A /* RoarSynth.cpp */; };
@@ -224,8 +213,6 @@
 		4F9828BF140A9EB700F3FCC1 /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D8FB13B63BA50032E0F3 /* Log.cpp */; };
 		4F9828C0140A9EB700F3FCC1 /* IPopupMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D8FD13B63BA50032E0F3 /* IPopupMenu.cpp */; };
 		4F9828C1140A9EB700F3FCC1 /* IParam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D90413B63BA50032E0F3 /* IParam.cpp */; };
-		4F9828C2140A9EB700F3FCC1 /* IControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D90913B63BA50032E0F3 /* IControl.cpp */; };
-		4F9828C3140A9EB700F3FCC1 /* IBitmapMonoText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA440513F3E4F2000B4551 /* IBitmapMonoText.cpp */; };
 		4F9828C4140A9EB700F3FCC1 /* IPlugVST3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F3E69041409746500C4D749 /* IPlugVST3.cpp */; };
 		4F9828C5140A9EB700F3FCC1 /* memorystream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F4ACFF5140996A10068A6D4 /* memorystream.cpp */; };
 		4F9828C6140A9EB700F3FCC1 /* pluginview.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F4ACFF7140996A10068A6D4 /* pluginview.cpp */; };
@@ -263,8 +250,6 @@
 		4FB600211567CB0A0020189A /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D8FB13B63BA50032E0F3 /* Log.cpp */; };
 		4FB600221567CB0A0020189A /* IPopupMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D8FD13B63BA50032E0F3 /* IPopupMenu.cpp */; };
 		4FB600231567CB0A0020189A /* IParam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D90413B63BA50032E0F3 /* IParam.cpp */; };
-		4FB600241567CB0A0020189A /* IControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F78D90913B63BA50032E0F3 /* IControl.cpp */; };
-		4FB600251567CB0A0020189A /* IBitmapMonoText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA440513F3E4F2000B4551 /* IBitmapMonoText.cpp */; };
 		4FB600261567CB0A0020189A /* AAX_Exports.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F4CC38A1549B91100A9EA21 /* AAX_Exports.cpp */; };
 		4FB600271567CB0A0020189A /* IPlugAAX.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F4CC4251549BED600A9EA21 /* IPlugAAX.cpp */; };
 		4FB600281567CB0A0020189A /* IPlugAAX_Describe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F4CC4401549C15500A9EA21 /* IPlugAAX_Describe.cpp */; };
@@ -291,12 +276,6 @@
 		4FD16D4213B635AB001D0217 /* swell-wnd.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FD16D4113B635AB001D0217 /* swell-wnd.mm */; };
 		4FD16D4413B635B2001D0217 /* swell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FD16D4313B635B2001D0217 /* swell.cpp */; };
 		4FD16D4713B635C8001D0217 /* swellappmain.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4FD16D4613B635C8001D0217 /* swellappmain.mm */; };
-		4FDA440713F3E4F2000B4551 /* IBitmapMonoText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA440513F3E4F2000B4551 /* IBitmapMonoText.cpp */; };
-		4FDA440813F3E4F2000B4551 /* IBitmapMonoText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA440513F3E4F2000B4551 /* IBitmapMonoText.cpp */; };
-		4FDA440913F3E4F2000B4551 /* IBitmapMonoText.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FDA440613F3E4F2000B4551 /* IBitmapMonoText.h */; };
-		4FDA440C13F3E4F2000B4551 /* IBitmapMonoText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA440513F3E4F2000B4551 /* IBitmapMonoText.cpp */; };
-		4FDA440E13F3E4F2000B4551 /* IBitmapMonoText.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4FDA440513F3E4F2000B4551 /* IBitmapMonoText.cpp */; };
-		4FDA440F13F3E4F2000B4551 /* IBitmapMonoText.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FDA440613F3E4F2000B4551 /* IBitmapMonoText.h */; };
 		4FF016F7134E14E2001447BA /* mutex.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FF016F4134E14E2001447BA /* mutex.h */; };
 		4FF016F8134E14E2001447BA /* ptrlist.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FF016F5134E14E2001447BA /* ptrlist.h */; };
 		4FF016F9134E14E2001447BA /* wdlstring.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FF016F6134E14E2001447BA /* wdlstring.h */; };
@@ -388,26 +367,12 @@
 			remoteGlobalIDString = D2AAC046055464E500DB518D;
 			remoteInfo = lice;
 		};
-		4F8D4C1613E976A7004F7633 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4F8D4BC413E97664004F7633 /* lice.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4F8D4C1413E976A7004F7633;
-			remoteInfo = "lice copy";
-		};
 		4F8D4C2C13E977CD004F7633 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4F8D4BC413E97664004F7633 /* lice.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = D2AAC045055464E500DB518D;
 			remoteInfo = "lice_32&64_intel";
-		};
-		4F8D4C3713E9783A004F7633 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4F8D4BC413E97664004F7633 /* lice.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 4F8D4BD513E976A7004F7633;
-			remoteInfo = lice_32_intel;
 		};
 		4F8D4C3913E97859004F7633 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -443,13 +408,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4F9828AA140A9EB700F3FCC1;
 			remoteInfo = "VST3_32&64_intel";
-		};
-		4FA708BE158B47F000BFC572 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4F4AD1F11409A56A0068A6D4 /* base.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4FA708BC158B47D200BFC572;
-			remoteInfo = base_32;
 		};
 		4FB6004F1567CB990020189A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -564,14 +522,11 @@
 		4F78D8D313B63B5D0032E0F3 /* aeffectx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aeffectx.h; sourceTree = "<group>"; };
 		4F78D8E613B63BA40032E0F3 /* IPlug_include_in_plug_hdr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPlug_include_in_plug_hdr.h; path = ../../IPlug/IPlug_include_in_plug_hdr.h; sourceTree = SOURCE_ROOT; };
 		4F78D8E813B63BA40032E0F3 /* IPlug_include_in_plug_src.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPlug_include_in_plug_src.h; path = ../../IPlug/IPlug_include_in_plug_src.h; sourceTree = SOURCE_ROOT; };
-		4F78D8E913B63BA40032E0F3 /* IControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IControl.h; path = ../../IPlug/IControl.h; sourceTree = SOURCE_ROOT; };
-		4F78D8EA13B63BA40032E0F3 /* IKeyboardControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IKeyboardControl.h; path = ../../IPlug/IKeyboardControl.h; sourceTree = SOURCE_ROOT; };
 		4F78D8EB13B63BA40032E0F3 /* IPlugStandalone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IPlugStandalone.cpp; path = ../../IPlug/IPlugStandalone.cpp; sourceTree = SOURCE_ROOT; };
 		4F78D8EC13B63BA40032E0F3 /* IPlugBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPlugBase.h; path = ../../IPlug/IPlugBase.h; sourceTree = SOURCE_ROOT; };
 		4F78D8ED13B63BA40032E0F3 /* IPlugBase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IPlugBase.cpp; path = ../../IPlug/IPlugBase.cpp; sourceTree = SOURCE_ROOT; };
 		4F78D8EE13B63BA50032E0F3 /* IGraphicsMac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGraphicsMac.h; path = ../../IPlug/IGraphics/IGraphicsMac.h; sourceTree = SOURCE_ROOT; };
 		4F78D8EF13B63BA50032E0F3 /* IPlugStructs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IPlugStructs.cpp; path = ../../IPlug/IPlugStructs.cpp; sourceTree = SOURCE_ROOT; };
-		4F78D8F113B63BA50032E0F3 /* Containers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Containers.h; path = ../../IPlug/Containers.h; sourceTree = SOURCE_ROOT; };
 		4F78D8F213B63BA50032E0F3 /* Hosts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Hosts.h; path = ../../IPlug/Hosts.h; sourceTree = SOURCE_ROOT; };
 		4F78D8F313B63BA50032E0F3 /* Hosts.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Hosts.cpp; path = ../../IPlug/Hosts.cpp; sourceTree = SOURCE_ROOT; };
 		4F78D8F513B63BA50032E0F3 /* IGraphicsMac.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = IGraphicsMac.mm; path = ../../IPlug/IGraphics/IGraphicsMac.mm; sourceTree = SOURCE_ROOT; };
@@ -590,7 +545,6 @@
 		4F78D90513B63BA50032E0F3 /* IMidiQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IMidiQueue.h; path = ../../IPlug/IMidiQueue.h; sourceTree = SOURCE_ROOT; };
 		4F78D90713B63BA50032E0F3 /* IGraphicsCarbon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGraphicsCarbon.h; path = ../../IPlug/IGraphics/IGraphicsCarbon.h; sourceTree = SOURCE_ROOT; };
 		4F78D90813B63BA50032E0F3 /* IGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGraphics.h; path = ../../IPlug/IGraphics/IGraphics.h; sourceTree = SOURCE_ROOT; };
-		4F78D90913B63BA50032E0F3 /* IControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IControl.cpp; path = ../../IPlug/IControl.cpp; sourceTree = SOURCE_ROOT; };
 		4F78D9EA13B63BE90032E0F3 /* IPlugStandalone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPlugStandalone.h; path = ../../IPlug/IPlugStandalone.h; sourceTree = SOURCE_ROOT; };
 		4F78D9EC13B63C6A0032E0F3 /* IPlugVST.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IPlugVST.cpp; path = ../../IPlug/IPlugVST.cpp; sourceTree = SOURCE_ROOT; };
 		4F78D9ED13B63C6A0032E0F3 /* IPlugVST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IPlugVST.h; path = ../../IPlug/IPlugVST.h; sourceTree = SOURCE_ROOT; };
@@ -663,8 +617,6 @@
 		4FD16D4513B635C8001D0217 /* swellappmain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = swellappmain.h; path = ../../WDL/swell/swellappmain.h; sourceTree = SOURCE_ROOT; };
 		4FD16D4613B635C8001D0217 /* swellappmain.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = swellappmain.mm; path = ../../WDL/swell/swellappmain.mm; sourceTree = SOURCE_ROOT; };
 		4FD290A8137C34D700CEBE7E /* RoarSynth.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = RoarSynth.icns; path = resources/RoarSynth.icns; sourceTree = "<group>"; };
-		4FDA440513F3E4F2000B4551 /* IBitmapMonoText.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = IBitmapMonoText.cpp; path = ../../IPlug/IBitmapMonoText.cpp; sourceTree = SOURCE_ROOT; };
-		4FDA440613F3E4F2000B4551 /* IBitmapMonoText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IBitmapMonoText.h; path = ../../IPlug/IBitmapMonoText.h; sourceTree = SOURCE_ROOT; };
 		4FF016F4134E14E2001447BA /* mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mutex.h; path = ../../WDL/mutex.h; sourceTree = SOURCE_ROOT; };
 		4FF016F5134E14E2001447BA /* ptrlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ptrlist.h; path = ../../WDL/ptrlist.h; sourceTree = SOURCE_ROOT; };
 		4FF016F6134E14E2001447BA /* wdlstring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wdlstring.h; path = ../../WDL/wdlstring.h; sourceTree = SOURCE_ROOT; };
@@ -713,7 +665,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F8B6766158B4F74002FC25B /* libPluginLibrary.a in Frameworks */,
-				4F8D4C2913E97794004F7633 /* lice32.a in Frameworks */,
 				4F7F5C6213E95EC8002918FD /* Cocoa.framework in Frameworks */,
 				4F7F5C6313E95EC8002918FD /* Carbon.framework in Frameworks */,
 				4F7F5CF713E96564002918FD /* System.framework in Frameworks */,
@@ -1033,7 +984,6 @@
 			isa = PBXGroup;
 			children = (
 				4F4AD1F61409A56A0068A6D4 /* libbase.a */,
-				4FA708BF158B47F000BFC572 /* libbase32.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1101,8 +1051,6 @@
 				4F3EE94513B65A350097B791 /* IPlugOSDetect.h */,
 				4F78D90813B63BA50032E0F3 /* IGraphics.h */,
 				4F78D8F613B63BA50032E0F3 /* IGraphics.cpp */,
-				4FDA440513F3E4F2000B4551 /* IBitmapMonoText.cpp */,
-				4FDA440613F3E4F2000B4551 /* IBitmapMonoText.h */,
 				4F78D8E613B63BA40032E0F3 /* IPlug_include_in_plug_hdr.h */,
 				4F78D8E813B63BA40032E0F3 /* IPlug_include_in_plug_src.h */,
 				4F78D8EC13B63BA40032E0F3 /* IPlugBase.h */,
@@ -1111,10 +1059,6 @@
 				4F78D8FE13B63BA50032E0F3 /* IPlugStructs.h */,
 				4F78D90313B63BA50032E0F3 /* IParam.h */,
 				4F78D90413B63BA50032E0F3 /* IParam.cpp */,
-				4F78D8E913B63BA40032E0F3 /* IControl.h */,
-				4F78D90913B63BA50032E0F3 /* IControl.cpp */,
-				4F78D8EA13B63BA40032E0F3 /* IKeyboardControl.h */,
-				4F78D8F113B63BA50032E0F3 /* Containers.h */,
 				4F78D8F213B63BA50032E0F3 /* Hosts.h */,
 				4F78D8F313B63BA50032E0F3 /* Hosts.cpp */,
 				4F78D8FC13B63BA50032E0F3 /* IPopupMenu.h */,
@@ -1276,7 +1220,6 @@
 			isa = PBXGroup;
 			children = (
 				4F8D4BCC13E97664004F7633 /* lice.a */,
-				4F8D4C1713E976A7004F7633 /* lice32.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1385,11 +1328,8 @@
 				4F1F1BEA135B1F60003A5BB2 /* wdlendian.h in Headers */,
 				4F78D93E13B63BA50032E0F3 /* IPlug_include_in_plug_hdr.h in Headers */,
 				4F78D94013B63BA50032E0F3 /* IPlug_include_in_plug_src.h in Headers */,
-				4F78D94113B63BA50032E0F3 /* IControl.h in Headers */,
-				4F78D94213B63BA50032E0F3 /* IKeyboardControl.h in Headers */,
 				4F78D94413B63BA50032E0F3 /* IPlugBase.h in Headers */,
 				4F78D94613B63BA50032E0F3 /* IGraphicsMac.h in Headers */,
-				4F78D94913B63BA50032E0F3 /* Containers.h in Headers */,
 				4F78D94A13B63BA50032E0F3 /* Hosts.h in Headers */,
 				4F78D95113B63BA50032E0F3 /* IGraphicsCocoa.h in Headers */,
 				4F78D95213B63BA50032E0F3 /* Log.h in Headers */,
@@ -1402,7 +1342,6 @@
 				4F78D96013B63BA50032E0F3 /* IGraphics.h in Headers */,
 				4F78DA0713B63CD90032E0F3 /* IPlugAU.h in Headers */,
 				4F3EE94913B65A350097B791 /* IPlugOSDetect.h in Headers */,
-				4FDA440913F3E4F2000B4551 /* IBitmapMonoText.h in Headers */,
 				4FA88B931444E4C4006CB8DA /* dfx-au-utilities.h in Headers */,
 				4F7E20051679307500907FCF /* RoarSynthDSP.h in Headers */,
 			);
@@ -1434,11 +1373,8 @@
 				4F78DA9413B640050032E0F3 /* aeffectx.h in Headers */,
 				4F78DA9513B640050032E0F3 /* IPlug_include_in_plug_hdr.h in Headers */,
 				4F78DA9613B640050032E0F3 /* IPlug_include_in_plug_src.h in Headers */,
-				4F78DA9713B640050032E0F3 /* IControl.h in Headers */,
-				4F78DA9813B640050032E0F3 /* IKeyboardControl.h in Headers */,
 				4F78DA9913B640050032E0F3 /* IPlugBase.h in Headers */,
 				4F78DA9A13B640050032E0F3 /* IGraphicsMac.h in Headers */,
-				4F78DA9C13B640050032E0F3 /* Containers.h in Headers */,
 				4F78DA9D13B640050032E0F3 /* Hosts.h in Headers */,
 				4F78DA9E13B640050032E0F3 /* IGraphicsCocoa.h in Headers */,
 				4F78DA9F13B640050032E0F3 /* Log.h in Headers */,
@@ -1450,7 +1386,6 @@
 				4F78DAA513B640050032E0F3 /* IGraphicsCarbon.h in Headers */,
 				4F78DAA613B640050032E0F3 /* IGraphics.h in Headers */,
 				4F3EE94613B65A350097B791 /* IPlugOSDetect.h in Headers */,
-				4FDA440F13F3E4F2000B4551 /* IBitmapMonoText.h in Headers */,
 				4F7E20061679307500907FCF /* RoarSynthDSP.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1510,7 +1445,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				4F8D4C3813E9783A004F7633 /* PBXTargetDependency */,
 				4F8B6765158B4F67002FC25B /* PBXTargetDependency */,
 			);
 			name = RTAS;
@@ -1666,20 +1600,6 @@
 			remoteRef = 4F8D4BCB13E97664004F7633 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		4F8D4C1713E976A7004F7633 /* lice32.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = lice32.a;
-			remoteRef = 4F8D4C1613E976A7004F7633 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		4FA708BF158B47F000BFC572 /* libbase32.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libbase32.a;
-			remoteRef = 4FA708BE158B47F000BFC572 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -1814,9 +1734,7 @@
 				4F78D9C313B63BA50032E0F3 /* Log.cpp in Sources */,
 				4F78D9C413B63BA50032E0F3 /* IPopupMenu.cpp in Sources */,
 				4F78D9C813B63BA50032E0F3 /* IParam.cpp in Sources */,
-				4F78D9C913B63BA50032E0F3 /* IControl.cpp in Sources */,
 				4F78D9F313B63C6A0032E0F3 /* IPlugVST.cpp in Sources */,
-				4FDA440C13F3E4F2000B4551 /* IBitmapMonoText.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1836,10 +1754,8 @@
 				4F78D95313B63BA50032E0F3 /* Log.cpp in Sources */,
 				4F78D95513B63BA50032E0F3 /* IPopupMenu.cpp in Sources */,
 				4F78D95C13B63BA50032E0F3 /* IParam.cpp in Sources */,
-				4F78D96113B63BA50032E0F3 /* IControl.cpp in Sources */,
 				4F78DA0813B63CD90032E0F3 /* IPlugAU.cpp in Sources */,
 				4F78DA0A13B63CD90032E0F3 /* IPlugAU_ViewFactory.mm in Sources */,
-				4FDA440813F3E4F2000B4551 /* IBitmapMonoText.cpp in Sources */,
 				4F296BDA1678E6C800C0F5C2 /* dfx-au-utilities.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1860,7 +1776,6 @@
 				4F7F5C5813E95EC8002918FD /* Log.cpp in Sources */,
 				4F7F5C5913E95EC8002918FD /* IPopupMenu.cpp in Sources */,
 				4F7F5C5A13E95EC8002918FD /* IParam.cpp in Sources */,
-				4F7F5C5B13E95EC8002918FD /* IControl.cpp in Sources */,
 				4F7F5C7113E95FB2002918FD /* IPlugRTAS.cpp in Sources */,
 				4F7F5CAD13E9607A002918FD /* digicode1.cpp in Sources */,
 				4F7F5CAE13E9607A002918FD /* digicode2.cpp in Sources */,
@@ -1869,7 +1784,6 @@
 				4F7F5CB113E9607A002918FD /* IPlugGroup.cpp in Sources */,
 				4F7F5CB213E9607A002918FD /* IPlugProcess.cpp in Sources */,
 				4F7F5CB313E9607A002918FD /* IPlugProcessRTAS.cpp in Sources */,
-				4FDA440713F3E4F2000B4551 /* IBitmapMonoText.cpp in Sources */,
 				4F79A34E146304CD00744AED /* IPlugProcessAS.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1890,8 +1804,6 @@
 				4F9828BF140A9EB700F3FCC1 /* Log.cpp in Sources */,
 				4F9828C0140A9EB700F3FCC1 /* IPopupMenu.cpp in Sources */,
 				4F9828C1140A9EB700F3FCC1 /* IParam.cpp in Sources */,
-				4F9828C2140A9EB700F3FCC1 /* IControl.cpp in Sources */,
-				4F9828C3140A9EB700F3FCC1 /* IBitmapMonoText.cpp in Sources */,
 				4F9828C4140A9EB700F3FCC1 /* IPlugVST3.cpp in Sources */,
 				4F9828C5140A9EB700F3FCC1 /* memorystream.cpp in Sources */,
 				4F9828C6140A9EB700F3FCC1 /* pluginview.cpp in Sources */,
@@ -1929,8 +1841,6 @@
 				4FB600211567CB0A0020189A /* Log.cpp in Sources */,
 				4FB600221567CB0A0020189A /* IPopupMenu.cpp in Sources */,
 				4FB600231567CB0A0020189A /* IParam.cpp in Sources */,
-				4FB600241567CB0A0020189A /* IControl.cpp in Sources */,
-				4FB600251567CB0A0020189A /* IBitmapMonoText.cpp in Sources */,
 				4FB600261567CB0A0020189A /* AAX_Exports.cpp in Sources */,
 				4FB600271567CB0A0020189A /* IPlugAAX.cpp in Sources */,
 				4FB600281567CB0A0020189A /* IPlugAAX_Describe.cpp in Sources */,
@@ -1966,12 +1876,10 @@
 				4F78D91313B63BA50032E0F3 /* Log.cpp in Sources */,
 				4F78D91413B63BA50032E0F3 /* IPopupMenu.cpp in Sources */,
 				4F78D91813B63BA50032E0F3 /* IParam.cpp in Sources */,
-				4F78D91913B63BA50032E0F3 /* IControl.cpp in Sources */,
 				4F78DA5A13B63F150032E0F3 /* RoarSynth.cpp in Sources */,
 				4FD16CA213B6327D001D0217 /* app_main.cpp in Sources */,
 				4FD16CA313B6327D001D0217 /* app_dialog.cpp in Sources */,
 				4FB3624F13B648FE00DB6B76 /* main.mm in Sources */,
-				4FDA440E13F3E4F2000B4551 /* IBitmapMonoText.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2017,11 +1925,6 @@
 			isa = PBXTargetDependency;
 			name = "lice_32&64_intel";
 			targetProxy = 4F8D4C2C13E977CD004F7633 /* PBXContainerItemProxy */;
-		};
-		4F8D4C3813E9783A004F7633 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = lice_32_intel;
-			targetProxy = 4F8D4C3713E9783A004F7633 /* PBXContainerItemProxy */;
 		};
 		4F8D4C3A13E97859004F7633 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
