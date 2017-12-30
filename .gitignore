@@ -48,7 +48,7 @@ IPlugExamples/build_errors.log
 
 /ReaperExtensions/
 
-WDL/lice/build/
+WDL/**/*
 
 /IPlugExamples/duplicate.pyc
 *.db-shm
