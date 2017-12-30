@@ -1,8 +1,8 @@
 #pragma once
 
 #include "IControl.h"
-#include "lice.h"
-#include "lice_text.h"
+#include "../../WDL/lice/lice.h"
+#include "../../WDL/lice/lice_text.h"
 
 #ifdef OS_OSX
 #include <CoreGraphics/CoreGraphics.h>
