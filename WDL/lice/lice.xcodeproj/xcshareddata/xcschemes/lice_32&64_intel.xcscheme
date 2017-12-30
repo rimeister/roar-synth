@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D2AAC045055464E500DB518D"
                BuildableName = "lice.a"
-               BlueprintName = "lice"
+               BlueprintName = "lice_32&amp;64_intel"
                ReferencedContainer = "container:lice.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -49,7 +49,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D2AAC045055464E500DB518D"
             BuildableName = "lice.a"
-            BlueprintName = "lice"
+            BlueprintName = "lice_32&amp;64_intel"
             ReferencedContainer = "container:lice.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -67,7 +67,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D2AAC045055464E500DB518D"
             BuildableName = "lice.a"
-            BlueprintName = "lice"
+            BlueprintName = "lice_32&amp;64_intel"
             ReferencedContainer = "container:lice.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
