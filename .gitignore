@@ -48,8 +48,6 @@ IPlugExamples/build_errors.log
 
 /ReaperExtensions/
 
-WDL/**/*
-
 /IPlugExamples/duplicate.pyc
 *.db-shm
 *.db-wal
