@@ -47,15 +47,20 @@ struct IColor
   bool operator==(const IColor& rhs) { return (rhs.A == A && rhs.R == R && rhs.G == G && rhs.B == B); }
   bool operator!=(const IColor& rhs) { return !operator==(rhs); }
   bool Empty() const { return A == 0 && R == 0 && G == 0 && B == 0; }
-  void Clamp() { A = std::min(A, 255); R = std::min(R, 255); G = std::min(G, 255); B = std::min(B, 255); }
+  void Clamp() {
+      A = (std::min)(A, 255);
+      R = (std::min)(R, 255);
+      G = (std::min)(G, 255);
+      B = (std::min)(B, 255);
+  }
   void Randomise(int alpha = 255) { A = alpha, R = std::rand() % 255, G = std::rand() % 255, B = std::rand() % 255; }
   IColor addContrast(double c)
   {
     c *= 255.;
     IColor n = *this;
-    n.R   = std::min(n.R += c, 255);
-    n.G = std::min(n.G += c, 255);
-    n.B  = std::min(n.B += c, 255);
+    n.R   = (std::min)(n.R += c, 255);
+    n.G = (std::min)(n.G += c, 255);
+    n.B  = (std::min)(n.B += c, 255);
     return n;
   }
 };
@@ -205,14 +210,14 @@ struct IRECT
   {
     if (Empty()) { return pRHS; }
     if (pRHS.Empty()) { return *this; }
-    return IRECT(std::min(L, pRHS.L), std::min(T, pRHS.T), std::max(R, pRHS.R), std::max(B, pRHS.B));
+    return IRECT((std::min)(L, pRHS.L), (std::min)(T, pRHS.T), (std::max)(R, pRHS.R), (std::max)(B, pRHS.B));
   }
 
   inline IRECT Intersect(const IRECT& pRHS) const
   {
     if (Intersects(pRHS))
     {
-      return IRECT(std::max(L, pRHS.L), std::max(T, pRHS.T), std::min(R, pRHS.R), std::min(B, pRHS.B));
+      return IRECT((std::max)(L, pRHS.L), (std::max)(T, pRHS.T), (std::min)(R, pRHS.R), (std::min)(B, pRHS.B));
     }
     return IRECT();
   }
@@ -293,22 +298,22 @@ struct IRECT
   {
     if (L < pRHS.L)
     {
-      R = std::min(pRHS.R - 1, R + pRHS.L - L);
+      R = (std::min)(pRHS.R - 1, R + pRHS.L - L);
       L = pRHS.L;
     }
     if (T < pRHS.T)
     {
-      B = std::min(pRHS.B - 1, B + pRHS.T - T);
+      B = (std::min)(pRHS.B - 1, B + pRHS.T - T);
       T = pRHS.T;
     }
     if (R >= pRHS.R)
     {
-      L = std::max(pRHS.L, L - (R - pRHS.R + 1));
+      L = (std::max)(pRHS.L, L - (R - pRHS.R + 1));
       R = pRHS.R - 1;
     }
     if (B >= pRHS.B)
     {
-      T = std::max(pRHS.T, T - (B - pRHS.B + 1));
+      T = (std::max)(pRHS.T, T - (B - pRHS.B + 1));
       B = pRHS.B - 1;
     }
   }
