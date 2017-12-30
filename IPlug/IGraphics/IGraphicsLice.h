@@ -12,6 +12,8 @@
 class IGraphicsLice : public IGraphics
 {
 public:
+  const char* GetDrawingAPIStr() override { return "LICE"; }
+
   IGraphicsLice(IPlugBaseGraphics& plug, int w, int h, int fps);
   ~IGraphicsLice();
 
@@ -54,10 +56,10 @@ protected:
   
 private:
 #ifdef OS_OSX
-  LICE_IBitmap* LoadAPIBitmap(const char* path);
   CGColorSpaceRef mColorSpace;
-  
 #endif
+  LICE_IBitmap* LoadAPIBitmap(const char* path);
+
   LICE_SysBitmap* mDrawBitmap;
   LICE_IFont* CacheFont(IText& text);
   LICE_MemBitmap* mTmpBitmap;
