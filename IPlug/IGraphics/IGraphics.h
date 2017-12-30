@@ -26,6 +26,7 @@ public:
   virtual void Draw(const IRECT& rect);
   virtual void DrawScreen(const IRECT& rect) = 0;
   void DrawBitmap(IBitmap& pBitmap, const IRECT& rect, int bmpState = 1, const IChannelBlend* pBlend = nullptr);
+  void DrawBitmapedText(IBitmap& bitmap, IRECT& rect, IText& text, IChannelBlend* pBlend, const char* str, bool vCenter = true, bool multiline = false, int charWidth = 6, int charHeight = 12, int charOffset = 0);
   
 #pragma mark - IGraphics API  impl drawing (pure virtual)
   virtual void DrawBitmap(IBitmap& bitmap, const IRECT& dest, int srcX, int srcY, const IChannelBlend* pBlend = nullptr) = 0;
@@ -78,6 +79,7 @@ public:
   virtual bool PromptForColor(IColor& pColor, const char* pStr = "") = 0;
   virtual bool OpenURL(const char* url, const char* msgWindowTitle = 0, const char* confirmMsg = 0, const char* errMsgOnFailure = 0) = 0;
   virtual const char* GetGUIAPI() { return ""; }
+  virtual const char* GetDrawingAPIStr() = 0;
   virtual bool WindowIsOpen() { return GetWindow(); }
   virtual void HostPath(WDL_String& path) = 0;
   virtual void PluginPath(WDL_String& path) = 0;
